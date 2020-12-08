@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>sign-up</title>
+        <link rel="stylesheet" href="signupstyle.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://kit.fontawesome.com/8603528244.js" crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <script src="C:\Users\kartik\Desktop\alumini\carouFredSel-jQuery-master\jquery.carouFredSel-6.2.1-packed.js" type="text/JavaScript"></script>
+    </head>
+    <body>
+      <header>
+        <section class="secondary " id="secondary">
+            <div class="row">
+                
+                <nav>
+                    <a href="" class="logo"><img src="img\logo.png"></a>
+                    
+                    
+                    <ul>
+                         
+                         
+                        
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="enroll.html">ENROLL</a></li>
+                      
+                        <li><a href="particles.js-master\demo\terms.html">TERMS & CONDITIONS</a></li>
+                    </ul>
+                </nav>
+            </div>
+          </section>
+          <script>
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    var scroll = $(window).scrollTop();
+                    if (scroll > 100) {
+                      $(".secondary").css("background" , "#0005");
+                    }
+              
+                    else{
+                        $(".secondary").css("background" , "");  	
+                    }
+                })
+              })
+           
+                $(document).ready(function(){
+                    $(window).scroll(function(){
+                        var scroll = $(window).scrollTop();
+                        if (scroll > 100) {
+                          $(".secondary").css("backdrop-filter","saturate(180%) blur(20px)");
+                        }
+                  
+                        else{
+                            $(".secondary").css("backdrop-filter" , "");  	
+                        }
+                    })
+                  })
+                </script>
+    </header><br><br><br>
+        
+          <div class="heading container">
+            <div class="row">
+            <div class="col-sm-12 ">
+              
+            <h1><span>ALUMNI </span>MANAGEMENT SYSTEM</h1>
+            <h3><br>ALUMNI SIGN-UP PAGE</h3>
+          
+      
+    </div>
+</div>
+          </div>
+          <br><br><br><br>
+        </section>
+        
+        <section class="signupforms" >
+          <div class="container" id="signup">
+          <div class="row">
+            <div class="col-sm-12 ">
+            <div class="msg">
+                <h6>
+                    "FILL YOUR CREDENTIALS CAREFULLY" .
+                </h6>
+            </div>
+            
+                
+              <form onSubmit = "return validate(this)" action="success.html" >      
+                <br>
+                <input type="text" id="unicode" placeholder=" Enter University-Code" name="unicode" required="required" size="30" autofocus><br>
+                 <br>
+                <input type="text" id="name" name="name" placeholder="Enter Full Name" required="required" size="30"><br>
+                <br>
+                <input type="text" id="email" name="email" placeholder="Enter Email" required="required" size="30"><br>
+                <br>
+                <input type="text" id="contact" name="contact" placeholder="Enter Contact" required="required" size="30"><br>
+                <br>
+                <input type="text" id="uid" name="uid" placeholder="Enter Uid" required="required" size="30"><br>
+                <br>
+                <input type="password" id="pwd" name="pwd" placeholder="Enter Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, 
+                and at least 8 or more characters" required="required" size="30"><br>
+                <br>
+                <input type="password" id="cnpwd" name="pwd" placeholder="Confirm Password" required="required" size="30"><br>
+                <script type = "text/javascript">
+                  {var pass= document.getElementById("pwd"), cnpass= document.getElementById("cnpwd")
+                       function validate(form)
+                       {
+                 if(pass.value==cnpass.value)
+                 {
+                    return true;}
+                  else
+                  {alert ("\nPassword did not match: Please try again...") 
+                    return false;}
+                       }
+                  }
+                  
+                  </script>
+               
+                <input type="checkbox" id="rem" name="rem" >remember me.<br>
+                <input type="checkbox" id="trems" name="terms" required="terms"oninvalid="setCustomValidity('Please accept our Terms and Condition to proceed')" oninput="setCustomValidity('')">I accept the <a href="particles.js-master\demo\terms.html">terms & conditions</a>.<br>
+               
+                <button type="submit" onclick="validate()" class="btn btn-full" >CREATE</button>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                <a href="signup.html"class="btn btn-half">CANCEL</a>
+               
+            
+              </form>
+            </div>
+          </div>
+          </div>
+        </section>
+        <div class="footer">
+        <div class="joinus">
+          <p><br>#Follow_us_on :        </p>
+          <i class="fa fa-facebook" ></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>  
+      </div>
+      </div>
+  </body>
+</html>

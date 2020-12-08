@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>university login</title>
+        <link rel="stylesheet" href="loginstyle.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://kit.fontawesome.com/8603528244.js" crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <script src="C:\Users\kartik\Desktop\alumini\carouFredSel-jQuery-master\jquery.carouFredSel-6.2.1-packed.js" type="text/JavaScript"></script>
+    </head>
+    <body>
+      <header>
+        <section class="secondary " id="secondary">
+            <div class="row">
+                
+                <nav>
+                    <a href="" class="logo"><img src="img\logo.png"></a>
+                    
+                    
+                    <ul>
+                      <li><a href="index.html">HOME</a></li>
+                     
+                        <li><a href="particles.js-master\demo\terms.html">TERMS & CONDT</a></li>
+                    </ul>
+                </nav>
+            </div>
+          </section>
+          <script>
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    var scroll = $(window).scrollTop();
+                    if (scroll > 100) {
+                      $(".secondary").css("background" , "#0005");
+                    }
+              
+                    else{
+                        $(".secondary").css("background" , "");  	
+                    }
+                })
+              })
+           
+                $(document).ready(function(){
+                    $(window).scroll(function(){
+                        var scroll = $(window).scrollTop();
+                        if (scroll > 100) {
+                          $(".secondary").css("backdrop-filter","saturate(180%) blur(20px)");
+                        }
+                  
+                        else{
+                            $(".secondary").css("backdrop-filter" , "");  	
+                        }
+                    })
+                  })
+                </script>
+    </header><br><br><br>
+        
+          <div class="heading container">
+            <div class="row"></div>
+            <div class="col-sm-12 ">
+              
+            <h1><span>ALUMNI </span>MANAGEMENT SYSTEM</h1>
+            <h3><br>UNIVERSITY LOGIN PAGE</h3>
+          </div>
+        </div>
+        <br><br><br><br><br><br>
+          </div>
+        </section>
+        <section class="loginforms" >
+          <div class="container" id="login">
+          <div class="row">
+            <div class="col-sm-12">
+              <form action="dashboard1.html" >   
+                <br><br>
+                <input type="text" id="unicode" placeholder=" Enter University-Code" name="unicode" required="required" size="30" autofocus><br>
+                 <br>
+                <input type="password" id="pwd" name="pwd" placeholder="Enter Password" required="required" size="30"><br>
+                <input type="checkbox" id="rem" name="rem" >remember me.
+                <span1 class="psw"> &nbsp  &nbsp forgot <a href="#">password?</a></span1><br>
+                 <span1 class="new">Not registered <a href="enroll.html">Enroll Now?</a></span1><br>
+                <button type="submit" class="btn btn-full">SUBMIT</button>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                <a href="login.html"class="btn btn-half">CANCEL</a>
+              </form>
+            </div>
+          </div>
+          </div>
+        </section>
+        <div class="footer">
+        <div class="joinus">
+          <p><br>#Follow_us_on :        </p>
+          <i class="fa fa-facebook" ></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>  
+      </div>
+    </div>
+  </body>
+</html>

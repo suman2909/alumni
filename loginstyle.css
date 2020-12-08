@@ -1,0 +1,150 @@
+*,html,body
+{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    height:100%;
+    width:100%;
+    text-align: center;
+    background-image:url(img/loginbg.jpg);
+   
+}
+
+header{
+    position: fixed;
+    width:100%;
+    line-height: 10px;
+    z-index: 1;
+    margin-right: 20px;
+    
+
+}
+.secondary{
+    width: 100%;
+   
+
+}
+.logo img{
+     width:10%;    
+     height:auto;
+     float: left;
+     border-radius: 8%;
+     
+}
+header nav{
+    float:top;
+    width: 100%;
+    text-align: right;
+    
+}
+ul{ 
+    list-style: none;
+    border-radius: 10px;
+}
+ul .form-inline{
+    display: inline-block;
+    float:right;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+li{
+    display: inline-block;
+    padding-top: 42px;
+}
+header ul li a{
+    text-align: center;
+    border-radius:5%;  
+    font-weight: bold;
+    color:whitesmoke;
+    margin-right: 20px;
+    padding-top: 0px;
+     transition: all 0.5s ease-in;
+}
+header ul li a:hover{ 
+    margin-right: 20px; 
+    font-weight: bolder;
+    color:whitesmoke;
+    padding:10px;
+
+    background-color: rgb(100, 90, 90);
+    transition: all 0.2s ease-in-out;
+}
+   
+.heading{
+    text-align: center;
+    
+    position:relative;
+    background-color: #0006;
+    margin:auto;
+    width: auto;
+    height: auto;
+    border-radius: 3%;
+}
+h1{
+
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color:whitesmoke;
+}
+span{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color:rgb(209, 45, 45);
+}
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+    color:rgba(38, 252, 223, 0.925);
+}
+
+.loginforms{
+    background-color: #0009;
+    text-align: center;
+    display:block;
+    color: whitesmoke;
+
+}
+.login{
+    text-align: center;
+}
+
+ 
+
+.loginforms .btn-full{
+    background-color: rgb(53, 202, 187);
+    color: whitesmoke;
+}
+.loginforms .btn-full:hover{
+    background-color: rgb(38, 139, 129);
+    color: wheat;
+}
+.loginforms .btn-half{
+    background-color: rgb(241, 19, 19);
+    color: whitesmoke;
+
+}
+.loginforms .btn-half:hover{
+    background-color: rgb(184, 30, 30);
+    color: whitesmoke;
+
+}
+.joinus{ 
+    text-align: center;
+    
+}
+p{ text-align: center;
+    font-style: verdana;
+    font-weight: bolder;
+    color:rgb(255, 255, 255);
+}
+.joinus .fa{
+    font-size: 30px;
+    padding-right:10px ;
+    color: whitesmoke;
+}
+
+

@@ -1,0 +1,142 @@
+html,body{ 
+	margin: 0;
+    padding: 0;
+    background-color: black;
+    animation: myanimation 15s infinite;
+  }
+  
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.body{
+  height:100%;
+ 
+ 
+} 
+
+header{
+  position: fixed;
+  width:100%;
+  line-height: 10px;
+  z-index: 1;
+  margin-right: 20px;
+  
+
+}
+.secondary{
+  width: 100%;
+ 
+
+}
+.logo img{
+   width:10%;    
+   height:auto;
+   float: left;
+   border-radius: 8%;
+   
+}
+header nav{
+  float:top;
+  width: 100%;
+  text-align: right;
+  
+}
+ul{ 
+  list-style: none;
+  border-radius: 10px;
+}
+ul .form-inline{
+  display: inline-block;
+  float:right;
+  padding-top: 30px;
+  padding-right: 20px;
+}
+li{
+  display: inline-block;
+  padding-top: 42px;
+  padding-bottom: 20px;
+}
+header ul li a{
+  text-align: center;
+  border-radius:5%;  
+  font-weight: bold;
+  color:whitesmoke;
+  margin-right: 20px;
+  padding-top: 0px;
+   transition: all 0.5s ease-in;
+  
+}
+header ul li a:hover{ 
+  margin-right: 20px; 
+  font-weight: bolder;
+  color:whitesmoke;
+  padding:10px;
+  box-shadow: 2px 2px 3px black;
+  background-color: rgb(43, 41, 41);
+  transition: all 0.2s ease-in-out;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+#particles-js{
+  width: 100%;
+  height: 600%;
+  position: absolute;
+  
+  justify-content: center;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: black;
+  animation: myanimation 15s infinite;
+}
+@keyframes myanimation {
+    0% {background-color: rgb(8, 8, 8);}
+    20%{background-color: rgb(11, 18, 24);}
+    40%{background-color:rgb(19, 40, 58);}
+    60%{background-color:rgb(5, 51, 49);}
+    80%{background-color:rgb(8, 20, 20);}
+    100% {background-color: rgb(12, 12, 12);}
+  }
+
+.show{text-align: center;
+ 
+  position: absolute;
+  margin-top: 10%;  
+}
+.terms{
+  text-align: center;
+}
+.head{
+ 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  color:whitesmoke;
+  text-shadow: 2px 2px 3px black;
+}
+span{
+ 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  color:rgb(209, 45, 45);
+  text-shadow: 2px 2px 3px black;
+}
+.condt{
+  color: beige;
+  text-shadow: 2px 2px 3px black;
+  
+}
+h3{
+  color:  #ccc;
+  text-align: center;
+}
+h5{
+  color: #ccc;
+}
+span2{
+    font-size: 30px;
+    color: crimson;
+}
